@@ -1,0 +1,249 @@
+/* Common styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.text-primary {
+  color: #1a73e8;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.text-md {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.divider {
+  height: 1px;
+  background: #eee;
+  margin: 12px 0;
+}
+
+/* Form styles */
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: #333;
+}
+
+.ant-input,
+.ant-select-selector {
+  border-radius: 6px !important;
+  border-color: #ddd !important;
+  padding: 8px 12px !important;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover {
+  border-color: #1a73e8 !important;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus {
+  border-color: #1a73e8 !important;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2) !important;
+}
+
+/* Button styles */
+.ant-btn {
+  border-radius: 6px !important;
+  padding: 8px 16px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.ant-btn-primary {
+  background: #1a73e8 !important;
+  border-color: #1a73e8 !important;
+}
+
+.ant-btn-primary:hover {
+  background: #1557b0 !important;
+  border-color: #1557b0 !important;
+}
+
+/* Table styles */
+.ant-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: #f8f9fa !important;
+  font-weight: 600 !important;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f8f9fa !important;
+}
+
+/* Modal styles */
+.ant-modal-content {
+  border-radius: 12px !important;
+  padding: 24px !important;
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #eee !important;
+  padding-bottom: 16px !important;
+  margin-bottom: 24px !important;
+}
+
+/* Layout styles */
+.layout {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.header {
+  background: #1a73e8;
+  padding: 16px 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid styles */
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.gap-1 {
+  gap: 8px;
+}
+
+.gap-2 {
+  gap: 16px;
+}
+
+.mt-1 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 16px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .content {
+    padding: 16px;
+  }
+  
+  .card {
+    padding: 16px;
+  }
+  
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+  
+  .text-xl {
+    font-size: 1.125rem;
+  }
+}
+
+/* Booking card styles */
+.booking-card {
+  transition: all 0.3s ease;
+}
+
+.booking-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.booking-poster {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-card .text-sm {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.booking-card .text-sm i {
+  font-size: 1.1rem;
+  margin-right: 8px;
+  color: #1a73e8;
+}
+
+.booking-card .divider {
+  margin: 12px 0;
+  background: #eee;
+  height: 1px;
+}
+
+.booking-card .text-xl {
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.booking-card .text-sm {
+  color: #666;
+}
+
+/* Responsive styles for booking cards */
+@media (max-width: 768px) {
+  .booking-poster {
+    width: 100px;
+    height: 150px;
+  }
+
+  .booking-card .text-sm {
+    font-size: 0.8rem;
+  }
+} 
